@@ -1,3 +1,16 @@
+# builtbywill_interview-platform
+
+> This repo was generated using a custom CLI tooling system by [builtbywill.dev](https://builtbywill.dev)
+
+---
+
+Powered by [BuiltByWill.dev](https://builtbywill.dev)  
+Phase–Coded | Method–Signed | Terminal–Forged
+
+
+
+
+
 # Welcome to React Router!
 
 A modern, production-ready template for building full-stack React applications using React Router.
