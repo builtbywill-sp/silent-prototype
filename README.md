@@ -1,8 +1,42 @@
-# builtbywill_interview-platform
+# silent-prototype
 
 > This repo was generated using a custom CLI tooling system by [builtbywill.dev](https://builtbywill.dev)
 
----
+🛰️ Silent Prototype — SaaS Landing Pages
+
+A terminal-themed, multi-product landing site for Silent Prototype.
+Built with React, React Router, and TailwindCSS.
+
+Features:
+
+    🔀 Dynamic routing for product modules (Morpheus, Violet Collar, etc.)
+
+    🎨 Reusable header with themed navigation
+
+    🧠 Minimalist blacksite aesthetic
+
+    ⚙️ Designed for scalability and documentation layering
+
+
+🚀 Getting Started
+
+npm install
+npm run dev
+
+
+📁 Structure
+
+    app/components/ – shared UI elements
+
+    app/routes/ – each page (e.g. /tools, /morpheus)
+
+    app.css – global styling and themes
+
+    routes.ts – all registered route configs
+
+Silent Prototype is more than software —
+it's the first OS for offline intelligence.
+
 
 Powered by [BuiltByWill.dev](https://builtbywill.dev)  
 Phase–Coded | Method–Signed | Terminal–Forged
