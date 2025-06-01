@@ -37,6 +37,14 @@ npm run dev
 Silent Prototype is more than software —
 it's the first OS for offline intelligence.
 
+---
+
+### 🧪 Live Demo
+> Deployed soon on [your GitHub Pages or Vercel link]
+
+BuiltByWill – built with code, styled with intent.
+
+
 
 Powered by [BuiltByWill.dev](https://builtbywill.dev)  
 Phase–Coded | Method–Signed | Terminal–Forged
