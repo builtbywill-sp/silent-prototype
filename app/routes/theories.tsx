@@ -1,38 +1,37 @@
-import Header from "~/components/Header";
-import { Card, CardHeader, CardContent } from "../components/ui/card";
-import { Separator } from "../components/ui/separator";
+import TheoryCard from "../components/TheoryCard";
 
-const Theories = () => {
+
+export default function TheoriesPage() {
   return (
-    <>
-      <Header />
-      <main className="flex justify-center px-4 py-12">
-        <Card className="bg-black border border-gray-800 text-gray-300 w-full max-w-4xl terminal-ui shadow-lg">
-          <CardHeader className="text-center pb-4">
-            <h1 className="text-3xl font-bold text-blue-400">Theories</h1>
-            <p className="text-gray-400 mt-2 italic">
-              Experimental logic layers. Conceptual and mathematical edge deployments.
-            </p>
-          </CardHeader>
+    <section className="max-w-3xl mx-auto px-4 py-10 space-y-6">
+      <h1 className="text-3xl font-bold text-center text-blue-400">Theories</h1>
+      <p className="text-center text-muted-foreground italic">
+        Experimental logic layers. Conceptual and mathematical edge deployments.
+      </p>
 
-          <CardContent className="text-sm sm:text-base space-y-4 font-mono">
-            <Separator className="bg-gray-700" />
-            <p className="text-gray-500">// Field Notes: Coming soon</p>
-
-            {/* Placeholder idea for future theories */}
-            <ul className="list-disc list-inside space-y-2 text-gray-400">
-              <li>Attention loops vs brute token sampling</li>
-              <li>Model entropy decay and prompt persistence</li>
-              <li>Phantom memory: inference with incomplete data</li>
-              <li>Semantic shadows and memory echoing</li>
-            </ul>
-
-            <p className="text-xs text-gray-600">// These ideas are not final. They are the edge.</p>
-          </CardContent>
-        </Card>
-      </main>
-    </>
+      <div className="grid sm:grid-cols-2 gap-4 mt-8">
+        <TheoryCard
+          title="Coldmetal.c"
+          description="AI does not have to live on the cloud"
+          link="/theories/coldmetal.c"
+        />
+        <TheoryCard
+          title="If It Needs Internet, It Was Never Alive"
+          description="True intelligence runs cold and local. No tether, no API call, no permission required."
+          link="/theories/no-subscription-intelligence"
+        />
+        <TheoryCard
+          title="Coldmetal.c"
+          description="React is just an illusion of control. C is what control looks like under the hood."
+          link="/theories/react-is-c"
+        />
+        <TheoryCard
+          title="Coming Soon..."
+          description="Silent Labs is always thinking"
+          link="/"
+        />
+        
+      </div>
+    </section>
   );
-};
-
-export default Theories;
+}
