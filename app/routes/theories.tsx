@@ -1,8 +1,11 @@
+import Header from "~/components/Header";
 import TheoryCard from "../components/TheoryCard";
 
 
 export default function TheoriesPage() {
   return (
+    <>
+    <Header />
     <section className="max-w-3xl mx-auto px-4 py-10 space-y-6">
       <h1 className="text-3xl font-bold text-center text-blue-400">Theories</h1>
       <p className="text-center text-muted-foreground italic">
@@ -10,10 +13,11 @@ export default function TheoriesPage() {
       </p>
 
       <div className="grid sm:grid-cols-2 gap-4 mt-8">
-        <TheoryCard
+        <TheoryCard 
           title="Coldmetal.c"
           description="AI does not have to live on the cloud"
           link="/theories/coldmetal.c"
+        
         />
         <TheoryCard
           title="If It Needs Internet, It Was Never Alive"
@@ -33,5 +37,6 @@ export default function TheoriesPage() {
         
       </div>
     </section>
+    </>
   );
 }

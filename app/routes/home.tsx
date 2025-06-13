@@ -1,90 +1,98 @@
 import Header from "~/components/Header";
-import { Card, CardHeader, CardContent } from "../components/ui/card";
-import { Separator } from "../components/ui/separator";
-import { Badge } from "../components/ui/badge";
+import HeroSection from "~/components/HeroSection";
+import ManifestCard from "~/components/ManifestCard";
+import SystemsDirectory from "~/components/SystemsDirectory";
+import TheoryCard from "~/components/TheoryCard";
+import SectionCard from "~/components/SectionCard";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <main className="flex justify-center px-4 py-12">
-        <Card className="bg-black border border-gray-800 text-gray-300 w-full max-w-4xl terminal-ui leading-relaxed shadow-lg rounded-md">
-          <CardHeader className="text-center pb-4">
-            <h1 className="text-5xl font-bold text-blue-400">
-              Silent Prototype
-            </h1>
-            <p className="text-lg text-gray-400 mt-4 italic max-w-2xl mx-auto">
-              A black site operating system engineered for creators, tacticians,
-              and the post-human frontier.
-            </p>
-          </CardHeader>
+      <main className="px-4 py-20 grid gap-28 max-w-7xl mx-auto text-white bg-[#0b0b13]">
+        <HeroSection />
+        <ManifestCard />
+        <SystemsDirectory />
 
-          <CardContent>
-            <Separator className="mb-6 bg-gray-700" />
+        <section id="morpheus" className="border-t border-gray-800 pt-16">
+          <h2 className="text-3xl font-bold mb-8 text-blue-300">Morpheus</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <SectionCard
+              title="Echo Core"
+              description="Core logic system for memory, inference, and response."
+              colorClass="text-blue-400"
+            />
+            <SectionCard
+              title="Memory Engine"
+              description="Persistent, file-bound memory banks for offline ops."
+              colorClass="text-blue-400"
+            />
+          </div>
+        </section>
 
-            <div className="text-left space-y-4 text-sm sm:text-base text-gray-300 font-mono tracking-wide">
-              <p>
-                <span className="text-green-400">/// Manifest</span>
-              </p>
-              <p>
-                <strong>No cloud. No noise. No compromise.</strong>
-              </p>
-              <p>
-                Silent Prototype is a classified interface for offline
-                intelligence — a system built to think, remember, and act
-                without reliance on third-party infrastructure.
-              </p>
-              <p>
-                No SaaS. No passive telemetry. Every function is traceable.
-                Every module is yours to invoke, extend, or override.
-              </p>
-              <p>
-                We host memory. We encode permanence. We reject the myth that AI
-                must be disposable or dependent.
-              </p>
-              <p>
-                This is not an app. This is a machine-bound instrument of
-                thought.
-              </p>
-              <p className="text-xs text-gray-600">
-                // Built to run in silence. Designed to last beyond its
-                creators.
-              </p>
-            </div>
+        <section id="violet" className="border-t border-gray-800 pt-16">
+          <h2 className="text-3xl font-bold mb-8 text-purple-300">Violet Collar</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <SectionCard
+              title="Visual Terminal"
+              description="Tactical interface for bridging mind and machine."
+              colorClass="text-purple-300"
+            />
+            <SectionCard
+              title="Human-AI Sync"
+              description="Synchronize tasks, memory, and intent through a single view."
+              colorClass="text-purple-300"
+            />
+          </div>
+        </section>
 
-            <Separator className="my-6 bg-gray-700" />
+        <section id="tools" className="border-t border-gray-800 pt-16">
+          <h2 className="text-3xl font-bold mb-8 text-green-300">Tools</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <SectionCard
+              title="RepoForge"
+              description="Spin up fully-licensed, README-ready repos from your CLI."
+              colorClass="text-green-400"
+            />
+            <SectionCard
+              title="Encryptor"
+              description="Project-level disk encryption & license vault generator."
+              colorClass="text-green-400"
+            />
+          </div>
+        </section>
 
-            <div className="text-left space-y-4 text-sm sm:text-base text-gray-300">
-              <p>
-                <Badge variant="outline" className="text-blue-600 ">Morpheus</Badge> — Core intelligence
-                system. Autonomous memory, inference, and logic loop.
-              </p>
-              <p>
-                <Badge variant="outline" className="text-blue-600">Violet Collar</Badge> — WIP human–AI
-                interface. A visual terminal to tactically bridge mind and
-                machine.
-              </p>
-              <p>
-                <Badge variant="outline" className="text-blue-600">Tools</Badge> — Developer-grade modules
-                for code, control, and command automation.
-              </p>
-              <p>
-                <Badge variant="outline" className="text-blue-600">Docs</Badge> — Architecture, internal
-                standards, protocol design, and system lifecycle notes.
-              </p>
-              <p>
-                <Badge variant="outline" className="text-blue-600">Theories</Badge> — Experimental logic
-                layers. Conceptual and mathematical edge deployments.
-              </p>
-            </div>
+        <section id="docs" className="border-t border-gray-800 pt-16">
+          <h2 className="text-3xl font-bold mb-8 text-gray-300">Docs</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <SectionCard
+              title="Internal Standards"
+              description="Architecture blueprints, setup flows, and system logic."
+              colorClass="text-gray-300"
+            />
+            <SectionCard
+              title="API Reference"
+              description="Module functions, install scripts, and automation commands."
+              colorClass="text-gray-300"
+            />
+          </div>
+        </section>
 
-            <Separator className="my-6 bg-gray-700" />
-
-            <p className="text-sm text-gray-600">
-              // Status: <span className="text-blue-500">ACTIVE</span>
-            </p>
-          </CardContent>
-        </Card>
+        <section id="theories" className="border-t border-gray-800 pt-16">
+          <h2 className="text-3xl font-bold mb-8 text-yellow-300">Theories</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <TheoryCard
+              link="/theories/agent-roundtable" //need to create this route
+              title="Agent Roundtable"
+              description="A poker-table UI where AI models debate topics using structured logic formats."
+            />
+            <TheoryCard
+              link="/theories/memory-injection-protocol" //need to create this route
+              title="Memory Injection Protocol"
+              description="Injecting long-term memory into offline agents with zero dependencies."
+            />
+          </div>
+        </section>
       </main>
     </>
   );
