@@ -17,27 +17,27 @@ export default function TheoriesPage() {
             <TheoryCard
               title="Agent Roundtable"
               description="A poker-table UI where AI models debate topics using structured logic formats."
-              link="/theories/agent-roundtable"
+              link="/notes"
             />
             <TheoryCard
               title="Memory Injection Protocol"
               description="Injecting long-term memory into offline agents with zero dependencies."
-              link="/theories/memory-injection-protocol"
+              link="/notes"
             />
             <TheoryCard
               title="Coldmetal.c"
               description="AI does not have to live on the cloud. Airgapped autonomy is the new frontier."
-              link="/theories/coldmetal.c"
+              link="/notes"
             />
             <TheoryCard
               title="No Subscription Intelligence"
               description="True intelligence runs cold and local. No tether, no API call, no permission required."
-              link="/theories/no-subscription-intelligence"
+              link="/notes"
             />
             <TheoryCard
               title="React Is C"
               description="React is just an illusion of control. C is what control looks like under the hood."
-              link="/theories/react-is-c"
+              link="/notes"
             />
             <TheoryCard
               title="Coming Soon..."

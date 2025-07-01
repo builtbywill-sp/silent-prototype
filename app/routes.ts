@@ -8,4 +8,5 @@ export default [
   route('docs', 'routes/docs.tsx'),
   route('login', 'routes/login.tsx'),
   route('theories', 'routes/theories.tsx'),
+  route('notes', 'routes/notes.tsx'),
 ] satisfies RouteConfig;

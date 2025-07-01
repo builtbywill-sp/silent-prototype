@@ -113,12 +113,12 @@ const Home = () => {
             </Link>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <TheoryCard
-                link="/theories/agent-roundtable"
+                link="/notes"
                 title="Agent Roundtable"
                 description="A poker-table UI where AI models debate topics using structured logic formats."
               />
               <TheoryCard
-                link="/theories/memory-injection-protocol"
+                link="/notes"
                 title="Memory Injection Protocol"
                 description="Injecting long-term memory into offline agents with zero dependencies."
               />
