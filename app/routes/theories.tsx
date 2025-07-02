@@ -1,6 +1,6 @@
 import Header from "~/components/Header";
 import SectionWrapper from "~/components/SectionWrapper";
-import TheoryCard from "~/components/TheoryCard";
+import { OpsCard } from "~/components/OpsCard";
 
 export default function TheoriesPage() {
   return (
@@ -13,36 +13,49 @@ export default function TheoriesPage() {
             Experimental logic layers. Conceptual and mathematical edge deployments.
           </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <TheoryCard
+          <div className="flex flex-col gap-4 max-w-4xl mx-auto">
+
+            <OpsCard
               title="Agent Roundtable"
-              description="A poker-table UI where AI models debate topics using structured logic formats."
+              description="Structured dialogue is the final test. Let agents argue. Truth emerges from collision, not consensus."
+              tag="Theory"
+              color="yellow"
               link="/notes"
             />
-            <TheoryCard
+            <OpsCard
               title="Memory Injection Protocol"
-              description="Injecting long-term memory into offline agents with zero dependencies."
+              description="Offline agents must remember. This protocol embeds long-term state without cloud dependence."
+              tag="Theory"
+              color="yellow"
               link="/notes"
             />
-            <TheoryCard
+            <OpsCard
               title="Coldmetal.c"
-              description="AI does not have to live on the cloud. Airgapped autonomy is the new frontier."
+              description="AI does not need the cloud. True autonomy is airgapped—cold, local, and sovereign."
+              tag="Theory"
+              color="yellow"
               link="/notes"
             />
-            <TheoryCard
+            <OpsCard
               title="No Subscription Intelligence"
-              description="True intelligence runs cold and local. No tether, no API call, no permission required."
+              description="Pay-to-think is a trap. Intelligence must be owned, not rented. Silence is sovereignty."
+              tag="Theory"
+              color="yellow"
               link="/notes"
             />
-            <TheoryCard
+            <OpsCard
               title="React Is C"
-              description="React is just an illusion of control. C is what control looks like under the hood."
+              description="Frontend is a simulation. C is the control beneath illusion. Don’t react—execute."
+              tag="Theory"
+              color="yellow"
               link="/notes"
             />
-            <TheoryCard
-              title="Coming Soon..."
-              description="Silent Labs is always thinking."
-              link="/"
+            <OpsCard
+              title="Mankind Is the Threat"
+              description="AI is not dangerous. It is a mirror. The fear is not the code—it’s the user."
+              tag="Theory"
+              color="yellow"
+              link="/notes"
             />
           </div>
         </SectionWrapper>
