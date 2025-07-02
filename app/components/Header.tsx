@@ -39,7 +39,7 @@ const Header = () => {
       <div className="flex justify-between items-center">
         {/* Home Button */}
         <Link
-          to="/"
+          to="/home"
           className="text-gray-300 hover:text-orange-300 text-base flex items-center gap-2"
         >
           <FontAwesomeIcon icon={faHome} />
