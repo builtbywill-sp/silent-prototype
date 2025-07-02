@@ -1,32 +1,28 @@
+import React from "react";
+import { ToolsCard } from "../components/ToolsCard";
+import { ClassifiedCard } from "../components/ClassifiedCard";
 import Header from "~/components/Header";
-import SectionWrapper from "~/components/SectionWrapper";
-import SectionCard from "~/components/SectionCard";
 
-export default function MorpheusPage() {
+export default function ToolsPage() {
   return (
     <>
       <Header />
-      <main className="max-w-7xl mx-auto px-4 py-20 text-white">
-        <SectionWrapper>
-          <h1 className="text-3xl font-bold mb-6 text-blue-400">Tools</h1>
-          <p className="text-sm italic text-muted-foreground mb-8">
-            ...
-          </p>
+      <section className="tools border-t border-gray-800 pt-16">
+        <div className="flex flex-col items-center space-y-6">
+          <h2 className="text-3xl font-bold text-gray-300 hover:text-white transition cursor-pointer text-center">
+            Tools
+          </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <SectionCard
-              title="..."
-              description="..."
-              colorClass="text-blue-400"
-            />
-            <SectionCard
-              title="..."
-              description="..."
-              colorClass="text-blue-400"
-            />
-          </div>
-        </SectionWrapper>
-      </main>
+        <ToolsCard
+          title="RepoForge"
+          description="Spin up fully-licensed, README-ready repos from your CLI."
+          href="https://github.com/builtbywilldev/RepoForge-v2/releases/tag/v2.0.0"
+          version="v2.0.0"
+        />
+
+        <ClassifiedCard label="Phase Toolchain Docs" />
+      </div>
+    </section>
     </>
   );
 }

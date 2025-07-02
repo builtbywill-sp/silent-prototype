@@ -1,3 +1,4 @@
+import ComingSoon from "~/components/ComingSoon";
 import Header from "~/components/Header";
 
 const login = () => {
@@ -5,7 +6,7 @@ const login = () => {
     <>
       <Header />
       <div className="terminal-ui">
-        login Page (Coming Soon...)
+        <ComingSoon pageName="Authentication" />
       </div>
     </>
   );
