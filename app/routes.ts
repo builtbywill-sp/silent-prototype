@@ -1,7 +1,8 @@
 import { type RouteConfig, route } from "@react-router/dev/routes";
 
 export default [
-  route('/', 'routes/home.tsx'),
+  route('/', 'routes/Boot.tsx'),
+  route('home', 'routes/home.tsx'),
   route('morpheus', 'routes/morpheus.tsx'),
   route('violet', 'routes/violet.tsx'),
   route('tools', 'routes/tools.tsx'),
