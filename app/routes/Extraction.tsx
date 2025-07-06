@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "~/components/Header";
+import { Button } from "../components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function Extraction() {
   return (
@@ -34,14 +36,30 @@ export default function Extraction() {
         </ol>
       </section>
 
+      <section>
+        <h2 className="text-2xl font-bold text-white mb-2">🧾 How It Works</h2>
+        <ol className="list-decimal list-inside space-y-1 text-gray-300">
+          <li>Upload your message database (chat.db or backup ZIP) securely — no payment required upfront.</li>
+          <li>Tell us what you need (by date, phone number, or keyword).</li>
+          <li>We’ll confirm your request, estimate scope, and let you know if more than the base tier is needed.</li>
+          <li>You receive a preview of ~10% of your export to confirm accuracy.</li>
+          <li>Once payment is complete, your full encrypted export will be delivered within 24 hours.</li>
+        </ol>
+      </section>
+
       <div className="bg-orange-500/10 border-l-4 border-orange-500 text-orange-300 p-4 rounded">
-        <p className="font-semibold">💰 Pricing starts at <span className="font-bold text-orange-400">$100</span> for encrypted file upload and delivery within 24 hours.</p>
-        <p>Remote walkthroughs or custom formatting available at additional cost.</p>
+        <p className="font-semibold">
+          💰 Pricing starts at <span className="font-bold text-orange-400">$100</span> minimum per extraction.
+        </p>
+        <p>Scope reviews are included. We’ll contact you before billing if your request exceeds the base tier.</p>
       </div>
 
       <p className="text-sm text-gray-500 pt-2">
         Got questions? Skip the middlemen — email <a href="mailto:builtbywill@pm.me" className="underline underline-offset-2">builtbywill@pm.me</a>. Real help, no scripts.
       </p>
+      <Link to="/upload">
+        <Button className="w-full mt-8">Begin Secure Upload</Button>
+      </Link>
     </div>
     </>
   );

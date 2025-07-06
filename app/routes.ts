@@ -14,4 +14,5 @@ export default [
   route('extraction', 'routes/Extraction.tsx'),
   route('hardware', 'routes/Hardware.tsx'),
   route('about', 'routes/About.tsx'),
+  route('upload', 'routes/Upload.tsx'),
 ] satisfies RouteConfig;
