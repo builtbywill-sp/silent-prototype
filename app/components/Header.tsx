@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMicrochip,
@@ -20,6 +20,7 @@ const navLinks = [
   { to: "/docs", label: "Docs", icon: faScroll },
   { to: "/theories", label: "Theories", icon: faFlask },
   { to: "/services", label: "Services", icon: faWrench },
+  { to: "/about", label: "About", icon: faScroll },
   { to: "/login", label: "Sign In", icon: faKey },
 ];
 
@@ -34,10 +35,21 @@ const getBtnStyles = (isEnd: boolean) => {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const showBack = location.pathname !== "/home";
 
   return (
     <header className="w-full px-6 py-4 bg-[#0b0b13] text-white border-b border-gray-800 font-mono relative z-50">
       <div className="flex justify-between items-center">
+        {showBack && (
+          <button
+            onClick={() => navigate(-1)}
+            className="text-gray-300 hover:text-orange-300 text-base flex items-center gap-2 mr-4"
+          >
+            ← Back
+          </button>
+        )}
         {/* Home Button */}
         <Link
           to="/home"
