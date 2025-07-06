@@ -6,6 +6,7 @@ export default [
   route('morpheus', 'routes/morpheus.tsx'),
   route('violet', 'routes/violet.tsx'),
   route('tools', 'routes/tools.tsx'),
+  route('services', 'routes/services.tsx'),
   route('docs', 'routes/docs.tsx'),
   route('login', 'routes/login.tsx'),
   route('theories', 'routes/theories.tsx'),

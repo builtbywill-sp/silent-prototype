@@ -19,6 +19,7 @@ const navLinks = [
   { to: "/tools", label: "Tools", icon: faWrench },
   { to: "/docs", label: "Docs", icon: faScroll },
   { to: "/theories", label: "Theories", icon: faFlask },
+  { to: "/services", label: "Services", icon: faWrench },
   { to: "/login", label: "Sign In", icon: faKey },
 ];
 
