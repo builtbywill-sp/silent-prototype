@@ -58,7 +58,7 @@ export default function Extraction() {
         Got questions? Skip the middlemen — email <a href="mailto:builtbywill@pm.me" className="underline underline-offset-2">builtbywill@pm.me</a>. Real help, no scripts.
       </p>
       <Link to="/upload">
-        <Button className="w-full mt-8">Begin Secure Upload</Button>
+        <Button className="w-full mt-8 bg-amber-600">Begin Secure Upload</Button>
       </Link>
     </div>
     </>
