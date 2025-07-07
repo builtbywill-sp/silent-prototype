@@ -2,6 +2,7 @@ import React from "react";
 import { ToolsCard } from "../components/ToolsCard";
 import { ClassifiedCard } from "../components/ClassifiedCard";
 import Header from "~/components/Header";
+import Footer from "~/components/Footer";
 
 export default function ToolsPage() {
   return (
@@ -23,6 +24,7 @@ export default function ToolsPage() {
         <ClassifiedCard label="Phase Toolchain Docs" />
       </div>
     </section>
+   <Footer />
     </>
   );
 }

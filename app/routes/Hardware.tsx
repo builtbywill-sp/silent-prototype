@@ -11,6 +11,7 @@ import { Checkbox } from "../components/ui/checkbox";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import Header from "~/components/Header";
+import Footer from "~/components/Footer";
 
 export default function Hardware() {
   return (
@@ -81,6 +82,7 @@ export default function Hardware() {
         </p>
       </div>
     </section>
+    <Footer />
     </>
   );
 }

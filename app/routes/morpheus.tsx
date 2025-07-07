@@ -1,3 +1,4 @@
+import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import { OpsCard } from "~/components/OpsCard";
 
@@ -32,6 +33,7 @@ export default function MorpheusPage() {
           />
         </div>
       </main>
+      <Footer />
     </>
   );
 }

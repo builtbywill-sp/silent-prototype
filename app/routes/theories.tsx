@@ -1,6 +1,7 @@
 import Header from "~/components/Header";
 import SectionWrapper from "~/components/SectionWrapper";
 import { OpsCard } from "~/components/OpsCard";
+import Footer from "~/components/Footer";
 
 export default function TheoriesPage() {
   return (
@@ -60,6 +61,7 @@ export default function TheoriesPage() {
           </div>
         </SectionWrapper>
       </section>
+      <Footer />
     </>
   );
 }

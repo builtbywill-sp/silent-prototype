@@ -120,6 +120,9 @@ const Upload = () => {
             Zip & Encrypt — Send Securely
           </button>
         </main>
+        <footer className="text-center text-sm text-zinc-500 mt-12 pb-6">
+          &copy; {new Date().getFullYear()} SilentPrototype™ — All rights reserved.
+        </footer>
     </>
   )
 }

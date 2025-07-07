@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { ClassifiedCard } from "~/components/ClassifiedCard";
 import { OpsCard } from "~/components/OpsCard";
 import { GitHubCard } from "~/components/GitHubCard"; // ⬅️ make sure this path matches your folder
+import Footer from "~/components/Footer";
 
 const Home = () => {
   return (
@@ -110,6 +111,7 @@ const Home = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "~/components/Header";
+import Footer from "~/components/Footer";
 import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -61,6 +62,7 @@ export default function Extraction() {
         <Button className="w-full mt-8 bg-amber-600">Begin Secure Upload</Button>
       </Link>
     </div>
+    <Footer />
     </>
   );
 }
